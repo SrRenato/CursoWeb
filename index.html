@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia completa</title>
+    <link rel="icon" href="img/fav.png">
+    <!-- ICON GOOGLE -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MATERIALIZE CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <!--Estrututa TOPO-->
+ <header>
+   <!-- MENU MOBILE-->
+    <ul class="side-nav" id="menu-mobile">
+        <li><a href="">HOME</a></li>
+        <li><a href="">SOBRE</a></li>
+        <li><a href="">SERVICOS</a></li>
+        <li><a href="">Unidades</a></li>
+        <li><a href="">CONTATO</a></li>
+    </ul>
+     <!-- FIXA O MENU -->
+     <div class="navbar-fixed"> 
+         
+         <!-- {z-depth-0} tira a sombra -->
+     <nav class="navbar z-depth-0">
+         <div class="nav-wrapper container">
+             <h1 class="logo_text"> Centro boa Forma - Seu espaco de saude</h1>
+                <a href=""><img class="logo_img" src="img/logo.png" alt="Centro boa Forma"></a>
+                
+                <!--colocar Right no (ul) para ficar alinhado {materialize}-->
+                <ul class="right light hide-on-med-and-down">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">SOBRE</a></li>
+                    <li><a href="">SERVICOS</a></li>
+                    <li><a href="">Unidades</a></li>
+                    <li><a href="">CONTATO</a></li>
+                </ul>
+              
+                <a href="#" data-activates="menu-mobile" class="button-collapse right"><i class="material-icons">menu
+                </i></a>
+
+
+            </div>
+     </nav>
+    </div>
+ </header>
+
+<!-- HOME -->
+<section class="home bloco">
+<div class="row container banner">
+    <div class="col s12 center">
+    <h2 class="white-text"> O Melhor treinamento ...</h2>
+    <p class="white-text">Um novo conceito em prevencao, promocao e reabilitacao da saude ...</p>
+    <div class="row botoes">
+        <a class="btn btn-large blue-logo"> Sobre nos</a>
+        <a class="btn btn-large white black-text">Contato</a>
+    </div>
+    </div>
+</div>
+
+</section>
+
+
+
+    <!--Materalize jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--Materialize JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+<!-- JAVASCRIPT -->
+
+<script type="text/javascript">
+     //MENU MOBILE
+    $(document).ready(function(){$(".button-collapse").sideNav();
+        
+    })
+</script>
+
+</body>
+</html>
